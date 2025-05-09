@@ -51,5 +51,5 @@ For tailwind css:
 - git branch -M main
 - git push -u origin main
 
-# Backend
+# Backend setup
 
