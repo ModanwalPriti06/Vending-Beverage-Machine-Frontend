@@ -78,7 +78,7 @@ function App() {
 
       {/* Inventory Display */}
       <div className="bg-amber-100 p-4 rounded-md mb-6">
-        <h2 className="text-xl font-bold mb-2 text-yellow-900"> Inventory</h2>
+        <h2 className="text-xl font-bold mb-2 text-yellow-900"> Inventory.. </h2>
         <ul className="space-y-1">
           {Object.entries(inventory).map(([ing, amt]) => (
             <li key={ing} className="flex justify-between text-yellow-900">
