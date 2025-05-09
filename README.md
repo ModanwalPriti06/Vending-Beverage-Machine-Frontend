@@ -52,4 +52,6 @@ For tailwind css:
 - git push -u origin main
 
 # Backend setup
+- npm i
+- 
 
