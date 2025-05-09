@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-     <h1 class="text-3xl font-bold"> Beverage Vending Machine</h1>
+     <h1 class="text-3xl font-bold"> Beverage Vending Machine </h1>
         
     </>
   )
