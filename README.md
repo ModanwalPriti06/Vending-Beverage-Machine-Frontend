@@ -53,5 +53,25 @@ For tailwind css:
 
 # Backend setup
 - npm i
-- 
+- npm init -y   // create package.json file
+- npm i express mongoose cors nodemon
+- goto package.json and add "start": "nodemon index.js" in script
+- start sever using npm start
+```
+//index.js
+  const express =require('express');
+  const mongoose = require('mongoose');
+  const cors = require('cors');
+  
+  const app= express();
+  
+  app.use(cors());
 
+  mongoose.connect('mongodb://localhost:27017');
+  
+  app.use(express.json());
+  
+  app.listen(1080,()=>{
+      console.log('listening on 1080');
+  })
+```
