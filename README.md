@@ -64,14 +64,16 @@ For tailwind css:
   const cors = require('cors');
   
   const app= express();
-  
   app.use(cors());
 
   mongoose.connect('mongodb://localhost:27017');
   
   app.use(express.json());
-  
   app.listen(1080,()=>{
       console.log('listening on 1080');
   })
 ```
+# MVC (Model View Controller)
+- Create Model and routes folder and file based on requirement
+
+
