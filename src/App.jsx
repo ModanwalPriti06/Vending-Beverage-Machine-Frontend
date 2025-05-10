@@ -66,17 +66,27 @@ function App() {
 
         {/* Beverage Buttons */}
         <div className="grid grid-cols-2 gap-4 mb-6">
-          {beverage?.map((item, idx) => (
-            <button
-              key={idx}
-              onClick={() => dispense(item?._id, item?.name)}
-              // disabled={!canDispense(recipes[name])}
-              className={'p-4 rounded-lg shadow-md transition-colors bg-green-500 hover:bg-green-600 text-white'
-              }
-            >
-              {item.name}
-            </button>
-          ))}
+          {beverage?.map((item, idx) => {
+            const isDisabled = !Object.entries(item.ingredients).every(([ingName, requiredQty]) => {
+              const invItem = inventory.find(inv => inv.name === ingName);
+              return invItem && invItem.value >= requiredQty;
+            });
+
+            return (
+              <button
+                key={idx}
+                onClick={() => dispense(item?._id, item?.name)}
+                disabled={isDisabled}
+                className={`p-4 rounded-lg shadow-md transition-colors ${
+                  isDisabled
+                    ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                    : 'bg-green-500 hover:bg-green-600 text-white'
+                }`}
+              >
+                {item.name}
+              </button>
+            );
+          })}
         </div>
 
         {/* Message */}
@@ -89,10 +99,10 @@ function App() {
         {/* beverage ingredient */}
         {bevIngredQty && (
           <div className="mb-4 text-center text-lg font-medium">
-            {Object.entries(bevIngredQty).map(([key, vale]) => (
+            {Object.entries(bevIngredQty).map(([key, value]) => (
               <div key={key} className="inline-block mx-2">
                 <span className="font-semibold">{key}:</span>{" "}
-                <span>{vale}</span>
+                <span>{value}</span>
               </div>
             ))}
           </div>
