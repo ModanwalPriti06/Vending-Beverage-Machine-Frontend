@@ -84,5 +84,6 @@ For tailwind css:
   }, []);
   ```
 - app.get('/api/beverages',  async(req, res )=> { api write in backend and get data based on req.
+- Insert data in mongodb compass shell - cli
 
 
