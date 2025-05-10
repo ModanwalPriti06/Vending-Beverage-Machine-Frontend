@@ -75,5 +75,14 @@ For tailwind css:
 ```
 # MVC (Model View Controller)
 - Create Model and routes folder and file based on requirement
+- add axios in frontend and call api in useEffect
+  ```
+    useEffect(() => {
+    axios.get("http://localhost:5000/api/beverages")
+      .then((res) => setBeverages(res.data))
+      .catch((err) => console.error(err));
+  }, []);
+  ```
+- app.get('/api/beverages',  async(req, res )=> { api write in backend and get data based on req.
 
 
