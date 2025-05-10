@@ -39,7 +39,7 @@ function App() {
         await getInventory();
         setMessage(`✅ Dispensed: ${name}`);
     } catch (err) {
-      console.error("Dispense Error:", err);
+      console.error(err);
       setMessage(`❌ Failed to dispense ${name}`);
     }
   };
