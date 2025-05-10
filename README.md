@@ -1,11 +1,6 @@
 # Beverage-Vending-Machine
 ### Design a system which will automate beverage vending machine. The main functions of this system are:
 
-# How Run frontned & Backend
-1. node version - 18
-2. Frontend run - npm run dev 
-3. Backend - npm start ( can install nodemon also)
-
 1. Displaying all beverages that the machine can dispense
 2. Dispensing correct beverage:
   Vending machine comes with 4 varieties of coffee.
@@ -28,7 +23,14 @@ You have to come up with backend logic, suitable data structures / tables / coll
 ### Advice:
 - Choose whatever Object Oriented language you’re comfortable with
 - We expect to see the code which you would be happy to put in production
-- If something is not clear don’t hesitate to ask or just make an assumption and go with it
+- If something is not clear don’t hesitate to ask or just make an assumption and go with it.
+
+---
+
+# How Run frontned & Backend
+1. node version - 18
+2. Frontend run - npm run dev 
+3. Backend - npm start ( can install nodemon also)
 
 ---
 # Frontend
