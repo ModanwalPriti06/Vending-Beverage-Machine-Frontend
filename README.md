@@ -93,4 +93,19 @@ For tailwind css:
 - app.get('/api/beverages',  async(req, res )=> { api write in backend and get data based on req.
 - Insert data in mongodb compass shell - cli
 
+# Test Cases
+
+1. Display all beverages.
+2. Dispense beverage successfully (with sufficient inventory)
+3. Prevent dispensing beverage (insufficient inventory).
+4. Top-up inventory -  Ingredient value is incremented correctly.
+5. Accurate ingredient deduction.
+6. Real-time inventory update
+7. Edge case – inventory zero
+8. Ingredient-based UI button disabling
+9. API error handling
+10. Database structure
+
+
+
 
