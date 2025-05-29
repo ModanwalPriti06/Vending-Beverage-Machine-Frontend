@@ -43,6 +43,33 @@ You have to come up with backend logic, suitable data structures / tables / coll
 
 For tailwind css: 
 - install tailwind css and config files - https://tailwindcss.com/docs/installation/using-vite
+ ```
+//vite.config.js
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),       
+    tailwindcss(),
+    // your React plugin
+  ]
+})
+
+```
+```
+/* src/index.css */
+
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+```
+
 - follow the instructions step.
 - run and use. Example to check tailwind apply or not.
 ```
