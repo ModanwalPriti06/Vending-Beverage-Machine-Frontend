@@ -42,7 +42,7 @@ You have to come up with backend logic, suitable data structures / tables / coll
 - server will start running
 
 For tailwind css: 
-- install tailwind css and config files
+- install tailwind css and config files - https://tailwindcss.com/docs/installation/using-vite
 - follow the instructions step.
 - run and use. Example to check tailwind apply or not.
 ```
