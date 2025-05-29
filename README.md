@@ -69,6 +69,10 @@ export default defineConfig({
 @tailwind utilities;
 
 ```
+```
+// app.js
+<p className="text-4xl h-1 text-indigo-600 font-bold underline">
+```
 
 - follow the instructions step.
 - run and use. Example to check tailwind apply or not.
