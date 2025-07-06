@@ -3,15 +3,14 @@
 
 1. Displaying all beverages that the machine can dispense
 2. Dispensing correct beverage:
-  Vending machine comes with 4 varieties of coffee.
-  Black coffee: 3 units of water, 1 unit of coffee, 1 unit of sugar
-  Coffee with milk: 1 unit of water, 1 unit of coffee, 2 units of milk, 1 unit of sugar
-  Above two variants also come with respective sugarless versions where the 1 unit of sugar is not used.
+  - Vending machine comes with 4 varieties of coffee.
+  - Black coffee: 3 units of water, 1 unit of coffee, 1 unit of sugar
+  - Coffee with milk: 1 unit of water, 1 unit of coffee, 2 units of milk, 1 unit of sugar
+  - Above two variants also come with respective sugarless versions where the 1 unit of sugar is not used.
 3. Managing the inventory:
-  The vending machine has limited inventory and it will need to notify the staff when it has run out of any of the ingredients. Also, it will have the ability to gracefully stop the orders
-  of the beverages which don’t have sufficient ingredients. The system will need to provide a way to top up the stock of the ingredients.
+  - The vending machine has limited inventory and it will need to notify the staff when it has run out of any of the ingredients. Also, it will have the ability to gracefully stop the orders of the beverages which don’t have sufficient ingredients. The system will need to provide a way to top up the stock of the ingredients.
 
-You have to come up with backend logic, suitable data structures / tables / collections and APIs which can be used by the team developing the UI of the vending machine.
+- You have to come up with backend logic, suitable data structures / tables / collections and APIs which can be used by the team developing the UI of the vending machine.
 
 ### Expectations:
 - Build JSON APIs
